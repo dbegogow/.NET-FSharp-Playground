@@ -25,3 +25,17 @@ let result = add5' 6
 // (2 * (number + 3)) ^ 2
 
 let operation number = (2. * (number + 3.)) ** 2.
+
+let add3 number = number + 3
+
+// 3 + number
+let add3' number = (+) 3 number
+
+// 3 + number
+let add3'' = (+) 3
+let times2 = (*) 2
+// 2^X
+let pow2 = ( ** ) 2.
+
+let operator' number =
+    pow2 (times2 (add3' number))

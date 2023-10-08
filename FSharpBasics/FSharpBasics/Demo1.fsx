@@ -1,12 +1,13 @@
-﻿let myOne: double = 1
-
-let myTwo = 2
+﻿let myOne = 1
 
 let hello = "hello"
+
 let letterA = 'a'
 
-let mutable isEnable = true
-isEnable <- false
+let isEnable = true
 
+let add x y = x + y
 
-printfn "Testing"
+let add5 x =
+    let five = 5
+    x + five

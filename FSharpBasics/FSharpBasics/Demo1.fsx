@@ -8,6 +8,8 @@ let isEnable = true
 
 let add x y = x + y
 
+let add' = fun x y -> x + y
+
 let add5 x =
     let five = 5
     x + five

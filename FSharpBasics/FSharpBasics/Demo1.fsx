@@ -39,3 +39,14 @@ let pow2 = ( ** ) 2.
 
 let operator' number =
     pow2 (times2 (add3' number))
+
+let operator'' number =
+    number 
+    |> add3'
+    |> times2
+
+let print' message =
+    printfn "%s" message
+
+"Hello" |> print'
+print' <| "Hello again"

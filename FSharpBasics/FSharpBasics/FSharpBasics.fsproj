@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Demo2.fs" />
+    <Compile Include="Demo3.fs" />
     <None Include="Demo1.fsx" />
   </ItemGroup>
 

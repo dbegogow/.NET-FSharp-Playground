@@ -53,3 +53,10 @@ print' <| "Hello again"
 
 let operator''' =
     add3' >> times2
+
+// g(f x)
+let (>>) f g =
+    fun x ->
+        x
+        |> f
+        |> g

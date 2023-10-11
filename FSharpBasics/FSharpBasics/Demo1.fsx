@@ -41,7 +41,7 @@ let operator' number =
     pow2 (times2 (add3' number))
 
 let operator'' number =
-    number 
+    number
     |> add3'
     |> times2
 
@@ -50,3 +50,6 @@ let print' message =
 
 "Hello" |> print'
 print' <| "Hello again"
+
+let operator''' =
+    add3' >> times2

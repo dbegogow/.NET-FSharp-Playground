@@ -5,6 +5,10 @@ open System
 module Program =
     [<EntryPoint>]
     let main args =
-        let age = 21
-        printfn "Hello world and I am %i" age
+        // 1 -> 3
+        // 2 -> 4
+        // 3 -> 5
+        let add2 x = x + 2
+        printfn "Hi, what is your name? "
+        let name = Console.ReadLine()
         0

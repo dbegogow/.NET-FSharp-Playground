@@ -1,14 +1,23 @@
 ﻿namespace FSharpBasics
 
 open System
+open System.Threading
 
 module Program =
     [<EntryPoint>]
     let main args =
-        // 1 -> 3
-        // 2 -> 4
-        // 3 -> 5
-        let add2 x = x + 2
         printfn "Hi, what is your name? "
         let name = Console.ReadLine()
+        printfn "Hi %s" name
+        
+        let currentTime () =
+            DateTime.Now
+
+        currentTime()
+        |> printfn "Time = %O"
+
+        Thread.Sleep 2000
+
+        currentTime()
+        |> printfn "Time = %O"
         0

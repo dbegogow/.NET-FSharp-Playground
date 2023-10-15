@@ -32,3 +32,6 @@ type Duo' = Person * Person
 
 let peopleTuple = (dzhulio, alex)
 let randomTuple = (dzhulio, 42, "some text", 1)
+
+let duo = {| Person1 = dzhulio; Person2 = alex |}
+let trio = {| duo with Person3 = dzhulio |}

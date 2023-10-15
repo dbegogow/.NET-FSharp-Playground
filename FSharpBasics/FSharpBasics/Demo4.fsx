@@ -27,3 +27,8 @@ type Duo = { Person1: Person; Person2: Person }
 
 let alex = { Name = "Alex"; Age = 28 }
 let brothers = { Person1 = dzhulio; Person2 = alex }
+
+type Duo' = Person * Person
+
+let peopleTuple = (dzhulio, alex)
+let randomTuple = (dzhulio, 42, "some text", 1)

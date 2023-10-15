@@ -53,3 +53,17 @@ type Shape =
     | Triangle of height: double * _base: double
     | Circle of radius: double
     | Dot
+
+//let yesOrNo bool =
+//    if bool
+//        then "Yes"
+//        else "No"
+
+let yesOrNo bool =
+    match bool with
+    | true -> "Yes"
+    | false -> "No"
+
+module Shape =
+    let area shape =
+        exn

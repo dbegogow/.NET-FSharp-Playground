@@ -35,3 +35,21 @@ let randomTuple = (dzhulio, 42, "some text", 1)
 
 let duo = {| Person1 = dzhulio; Person2 = alex |}
 let trio = {| duo with Person3 = dzhulio |}
+
+// Sum types
+
+// Discriminated unions
+
+type Suit =
+    | Hearts
+    | Clubs
+    | Spades
+    | Diamonds
+
+type Rectangle = { Base: double; Height: double }
+
+type Shape =
+    | Rectangle of Rectangle
+    | Triangle of height: double * _base: double
+    | Circle of radius: double
+    | Dot

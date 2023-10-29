@@ -146,6 +146,12 @@ module Shape =
 Shape.area circle
 Shape.area triangle
 
-type Option<'a> =
-    | Some of 'a
-    | None
+let translateFizzBuzz' = function
+    | "Fizz" -> Some 3
+    | "Buzz" -> Some 5
+    | "FizzBuzz" -> Some 15
+    | _ -> None
+
+let hasValue = function
+    | Some _ -> true
+    | None -> false

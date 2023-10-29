@@ -83,10 +83,10 @@ let isOne'' =
     (=) 1
 
 let translateFizzBuzz = function
-    | "Fizz" -> string 3
-    | "Buzz" -> string 5
-    | "FizzBuzz" -> string 15
-    | x -> x
+    | "Fizz" -> 3
+    | "Buzz" -> 5
+    | "FizzBuzz" -> 15
+    | _ -> failwith "Not a correct argument"
 
 let fizzStringNum = translateFizzBuzz "Fizz"
 let buzzStringNum = translateFizzBuzz "Buzz"
@@ -145,3 +145,7 @@ module Shape =
 
 Shape.area circle
 Shape.area triangle
+
+type Option<'a> =
+    | Some of 'a
+    | None

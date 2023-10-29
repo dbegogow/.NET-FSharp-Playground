@@ -95,6 +95,27 @@ let TomatoStringNum = translateFizzBuzz "Tomato"
 
 type NormalRectangle = { Base: double; Height: double }
 
+// This works with Single Case Pattern matches
+// Record types
+// Tuples
+// Single Case DU
+
+int
+
+type OrderId = OrderId of int
+
+let incrementOrderId (OrderId id) =
+    OrderId <| id + 1
+
+let incrementOrderId' =
+    fun (OrderId id) ->
+        OrderId <| id + 1
+
+let area {Base = b; Height = h} = 
+    b * h
+
+let area' (b, h) = b * h
+
 type Rectangle =   
     | Normal of NormalRectangle
     | Square of side:double

@@ -164,3 +164,18 @@ let hasValue = function
 let inline add x y = x + y
 
 let test = dzhulio + alex
+
+// Fixed size
+// Mutable
+[|1;2;3;4;5;6;7;8;9|]
+
+[|
+    1
+    2
+    3
+    4
+    
+|]
+
+let arr = [|1 .. 10|]
+arr.[0] <- 5

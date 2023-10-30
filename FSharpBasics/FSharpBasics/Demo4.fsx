@@ -6,7 +6,12 @@
 *)
 
 type Day = { DayOfTheMonth: int; Month: int }
-type Person = { Name: string; Age: int }
+type Person = 
+    { Name: string; Age: int }
+    with
+        static member (+) ({Name = n1; Age = a1}, {Name = n2; Age = a2}) =
+            {Name = n1 + n2; Age = a1 + a2}
+
 //type Person2 = { Name: string; Age: int }
 
 let dzhulio = { Name = "Dzhulio"; Age = 21 }
@@ -91,7 +96,7 @@ let translateFizzBuzz = function
 let fizzStringNum = translateFizzBuzz "Fizz"
 let buzzStringNum = translateFizzBuzz "Buzz"
 let fizzBuzzStringNum = translateFizzBuzz "FizzBuzz"
-let TomatoStringNum = translateFizzBuzz "Tomato"
+//let TomatoStringNum = translateFizzBuzz "Tomato"
 
 type NormalRectangle = { Base: double; Height: double }
 
@@ -155,3 +160,7 @@ let translateFizzBuzz' = function
 let hasValue = function
     | Some _ -> true
     | None -> false
+
+let inline add x y = x + y
+
+let test = dzhulio + alex

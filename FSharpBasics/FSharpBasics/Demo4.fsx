@@ -179,3 +179,34 @@ let test = dzhulio + alex
 
 let arr = [|1 .. 10|]
 arr.[0] <- 5
+
+// Immutable
+// Linked list
+
+[1;2;3;4;5;6]
+
+[
+    1
+    2
+    3
+    4
+    5
+]
+
+[1 .. 10]
+[1 ..2.. 10]
+[1. .. 0.1 .. 10.]
+['a' .. 'z']
+
+// list
+type LinkedList<'a> =
+    | ([])
+    | (::) of head:'a * tail:'a list
+
+let empty = []
+
+let addToList x xs =
+    x::xs
+
+let sampleList = [3;2;4]
+let newSampleList = addToList 1 sampleList
